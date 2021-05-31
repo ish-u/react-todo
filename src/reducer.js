@@ -22,9 +22,10 @@ export const reducer = (state, action) => {
       });
       return { ...state, data: newData };
     case "REMOVE_TODO":
-      const afterRemoveData = state.data.filter((todo) => {
+      const afterRemoveData = [];
+      state.data.forEach((todo) => {
         if (todo.id !== action.payload) {
-          return todo;
+          afterRemoveData.push(todo);
         }
       });
       return { ...state, data: afterRemoveData };
@@ -34,7 +35,7 @@ export const reducer = (state, action) => {
       return { ...state, showModal: false, todo: "" };
 
     default:
-      Error("LOL");
+      Error("YOU DID SOMETHING YOU WERE NOT SUPPOSE TO DO");
       break;
   }
 };

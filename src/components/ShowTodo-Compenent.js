@@ -1,7 +1,7 @@
 import { React } from "react";
 import { Modal } from "react-bootstrap";
 
-const EditTodo = ({ dispatch, toShow, todo }) => {
+const ShowTodo = ({ dispatch, toShow, todo }) => {
   const handleClose = () => {
     dispatch({ type: "CLOSE_MODAL" });
   };
@@ -17,4 +17,4 @@ const EditTodo = ({ dispatch, toShow, todo }) => {
   );
 };
 
-export default EditTodo;
+export default ShowTodo;

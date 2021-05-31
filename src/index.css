@@ -25,6 +25,8 @@ code {
   padding: 2.5%;
   display: flex;
   flex-direction: column;
+}
+.todo h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

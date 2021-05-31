@@ -5,18 +5,19 @@ import AddTodo from "./components/AddTodo-Component";
 import ShowTodo from "./components/ShowTodo-Compenent";
 import data from "./todo";
 import { reducer } from "./reducer";
+
 function App() {
+  // initail state of the Todo List
   const initialState = {
     data: data,
     showModal: false,
     todo: "",
   };
+  // using the useReducer Hook to add/remove Todos
   const [state, dispatch] = useReducer(reducer, initialState);
-
   return (
     <Container className="p-5" style={{ textAlign: "center" }}>
       <h1>REACT TODO</h1>
-
       <AddTodo dispatch={dispatch}></AddTodo>
       <Row>
         {state.data.map((todo) => {
