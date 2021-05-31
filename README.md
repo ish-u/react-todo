@@ -1,10 +1,11 @@
 # A Todo List using ReactJS
 
-A Simple Todo List App made using ReactJS. I used [https://react-bootstrap.netlify.app/]react-bootstrap for styling.
+A Simple Todo List App made using ReactJS. I used [react-bootstrap](https://react-bootstrap.netlify.app/) for styling.
 
 ## Demo
 
--
+- [Netlify](https://react-todo-128.netlify.app/)
+- ![](todo.gif)
 
 ## Setup and Run Locally
 
